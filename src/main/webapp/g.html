@@ -1,0 +1,32 @@
+<!-- Plain HTML page that kicks us into the app -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="resources/js/raphael.2.1.0.min.js"></script>
+<script src="resources/js/justgage.1.0.1.min.js"></script>
+<script> 
+window.onload= function(){
+var g = new JustGage({
+   id: "g",
+   value: 67,
+   min: 0,
+   max: 100,
+ title: "Simple Gauge"
+ });
+};
+</script>
+<style>
+.gage {
+   width: 200px;
+   height: 160px;
+}
+</style>
+
+</head>
+<body>
+<div id="g" class="gage"></div>
+
+</body>
+</html>
