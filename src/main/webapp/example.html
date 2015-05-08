@@ -7,11 +7,12 @@
 	<style>body{padding:0;margin:0;background:#222}</style>
 </head>
 <body>
-	<p><input type="button" onclick="showGauge()" value="Show Gauge"></p>
+<p>
+	<!-- <input type="button" onclick="showGauge()" value="Show Gauge"></p> -->
 	<canvas id="gauge"></canvas>
 	<div id="console"></div>
 <script>
-function showGauge() {
+window.onload= function showGauge() {
 
 	var gauge = new Gauge({
 		renderTo    : 'gauge',
